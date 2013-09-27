@@ -11,7 +11,8 @@ HOW TO INSTALL(iOS)
 5. Add following code snippet into `AppDelegate.m`
 6. Install the plugin, `phonegap local plugin add https://github.com/xu-li/phonegap-weibo.git`
 7. In xcode, add `<feature>` in the `config.xml`
-8. Done.
+8. In xcode, add `<access origin="*" />` in the `config.xml`
+9. Done.
 
 HOW TO USE
 ========
