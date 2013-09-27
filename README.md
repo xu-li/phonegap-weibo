@@ -36,11 +36,16 @@ $.post("https://api.weibo.com/2/statuses/update.json", {
 AppDelegate.m
 ========
 ```Objective-c
-    - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
-    {
-        CDVWeibo *weiboPlugin = [self.viewController.pluginObjects objectForKey:@"CDVWeibo"];
-        return [WeiboSDK handleOpenURL:url delegate:weiboPlugin];
-    }
+#import "WeiboSDK.h"
+#import "CDVWeibo.h"
+
+...
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    CDVWeibo *weiboPlugin = [self.viewController.pluginObjects objectForKey:@"CDVWeibo"];
+    return [WeiboSDK handleOpenURL:url delegate:weiboPlugin];
+}
 ```
 
 feature Example
