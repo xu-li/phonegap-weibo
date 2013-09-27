@@ -19,8 +19,6 @@
     <platform name="ios">
         <header-file src="src/ios/CDVWeibo.h" />
         <source-file src="src/ios/CDVWeibo.m" />
-        <header-file src="src/ios/WeiboDelegate.h" />
-        <source-file src="src/ios/WeiboDelegate.m" />
     </platform>
 
 </plugin>
